@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Lomangio - Software Developer</title>
+    <style>
+        :root {
+            --primary-color: #0366d6;
+            --secondary-color: #24292e;
+            --bg-color: #f6f8fa;
+            --text-color: #24292e;
+            --border-color: #e1e4e8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 2rem;
+            border: 3px solid var(--primary-color);
+        }
+        
+        .project-card {
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .service-card {
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            margin-right: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile img {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Patrick Lomangio</h1>
+        <p>Software Developer | Computer Science Student</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="profile">
+                <img src="profile-picture.jpg" alt="Patrick Lomangio">
+                <div>
+                    <p>Computer Science student at Farmingdale State College with a focus on web development and machine learning. I'm interested in building practical applications and learning new technologies.</p>
+                    <p>Currently working on expanding my skills in full-stack development while completing my degree.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/lomapj" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/patricklomangio" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-card">
+                <h3>CSC311 Capstone Project</h3>
+                <p>A comprehensive web application built as part of my CSC311 course. This project demonstrates my skills in full-stack development.</p>
+                <p><strong>Technologies:</strong> React, Node.js, Express, MongoDB</p>
+                <p><a href="https://github.com/lomapj/csc311-capstone" target="_blank">View on GitHub</a></p>
+            </div>
+            
+            <div class="project-card">
+                <h3>Project Name #2</h3>
+                <p>Description of your second project. What problem does it solve? What did you learn while building it?</p>
+                <p><strong>Technologies:</strong> List the technologies you used</p>
+                <p><a href="https://github.com/lomapj/project-2" target="_blank">View on GitHub</a></p>
+            </div>
+            
+            <div class="project-card">
+                <h3>Project Name #3</h3>
+                <p>Description of your third project. Highlight what makes this project interesting or challenging.</p>
+                <p><strong>Technologies:</strong> List the technologies you used</p>
+                <p><a href="https://github.com/lomapj/project-3" target="_blank">View on GitHub</a></p>
+            </div>
+        </section>
+        
+        <section id="services">
+            <h2 class="section-title">What I Can Do</h2>
+            
+            <div class="services">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Frontend and backend web development using modern frameworks and libraries to create responsive applications.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Machine Learning</h3>
+                    <p>Building and training machine learning models for data analysis and predictive applications.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Database Design</h3>
+                    <p>Creating efficient database schemas and implementing database solutions for web applications.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Programming Tutoring</h3>
+                    <p>Helping others learn programming concepts and solve coding problems.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>I'm currently open to internship opportunities and project collaborations.</p>
+            <p>Email: <a href="mailto:lomapj@farmingdale.edu">lomapj@farmingdale.edu</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/patricklomangio" target="_blank">linkedin.com/in/patricklomangio</a></p>
+            <p>GitHub: <a href="https://github.com/lomapj" target="_blank">github.com/lomapj</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Patrick Lomangio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
